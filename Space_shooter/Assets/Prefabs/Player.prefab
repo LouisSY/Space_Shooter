@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 3186404891817982784}
   - component: {fileID: 3186404891817982785}
   - component: {fileID: 3186404891817982798}
+  - component: {fileID: -5760313897032290664}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -126,5 +127,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5e8f6210aae7ef4ab990d0fb53b52b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1744242105571497377, guid: e962075e6c259b74d8a8ea955a95f1f6, type: 3}
+  bullet: {fileID: 6652465265005304347, guid: e962075e6c259b74d8a8ea955a95f1f6, type: 3}
   GunPos: {fileID: 3186404891093375768}
+--- !u!65 &-5760313897032290664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3186404891817982799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.93, y: 1.61, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}

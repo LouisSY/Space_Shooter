@@ -15,14 +15,15 @@ public class EnemyActions : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.down * Time.deltaTime * enemySpeed);
-        moveEnemy();
+        if(transform.position.y < -4.5f) {
+            reset();
+        }
     }
 
-    void moveEnemy() {        
-        if(transform.position.y < -4.5f) {
-            float xPosRan = Random.Range(-8.0f, 8.0f);
-            transform.position = new Vector3(xPosRan, 6.5f, 0);
-            enemySpeed = Random.Range(2.0f, 7.0f);
-        }
+
+    public void reset() {
+        float xPosRan = Random.Range(-8.0f, 8.0f);
+        transform.position = new Vector3(xPosRan, 6.5f, 0);
+        enemySpeed = Random.Range(2.0f, 7.0f);
     }
 }
