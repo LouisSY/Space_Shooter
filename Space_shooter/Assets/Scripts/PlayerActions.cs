@@ -25,7 +25,7 @@ public class PlayerActions : MonoBehaviour
         float inputHor = Input.GetAxis("Horizontal");
         float inputVer = Input.GetAxis("Vertical");
 
-        transform.Translate(Vector3.right * Time.deltaTime * 7 * inputHor);
+        transform.Translate(Vector3.right * Time.deltaTime * 10 * inputHor);
         transform.Translate(Vector3.up * Time.deltaTime * 7 * inputVer);
 
         if(transform.position.x > 9.5f) {
