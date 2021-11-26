@@ -5,18 +5,23 @@ using UnityEngine;
 public class EnemyHit : MonoBehaviour
 {
     public EnemyActions enemyActions;
-    public GameObject exposion;
+    public GameObject exposion_enemy;
+    public GameObject exposion_player;
     void Start()
     {
 
     }
 
     void OnTriggerEnter(Collider c) {
-        //if(c.gameObject.name == "Bullet(Clone)") {
-            Instantiate(exposion, transform.position, Quaternion.identity);
+        Debug.Log(c.gameObject.name);
+        if(c.tag == "Bullets") {
+            Instantiate(exposion_enemy, transform.position, Quaternion.identity);
             Destroy(c.gameObject);
             enemyActions.reset();
-        //}
+        }
+        if(c.tag == "Player") {
+            Instantiate(exposion_player, transform.position, Quaternion.identity);
+        }
 
     }
 }

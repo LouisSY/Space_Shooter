@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8601796426155798842}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyActions: {fileID: 4304549658467139721}
-  exposion: {fileID: 4669090072570374253, guid: 176a73adca361774fbba1b18e3a12523,
+  exposion_enemy: {fileID: 4669090072570374253, guid: 176a73adca361774fbba1b18e3a12523,
+    type: 3}
+  exposion_player: {fileID: 8023729819183810710, guid: 2442083339755224486b846a558c5e52,
     type: 3}
 --- !u!54 &8601796426155798842
 Rigidbody:
